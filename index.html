@@ -7,19 +7,19 @@
   <title>Carrie's Activities</title>
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="./Carrie no background 2.png">
+  <link rel="icon" type="image/png" href="./media/carrie-no-background.png">
 
   <style>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
     body {
-      background: linear-gradient(135deg, #f7d9e3, #fbeee6);
+      background: #b2d8d8;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -42,7 +42,16 @@
       text-align: center;
       margin-bottom: 25px;
       font-size: 2.5rem;
-      color: #b05c7c;
+      color: #66b2b2;
+      letter-spacing: 1px;
+      font-weight: 350;
+    }
+
+    .highlights h4 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2.5rem;
+      color: #66b2b2;
       letter-spacing: 1px;
       font-weight: 350;
     }
@@ -53,19 +62,19 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      border: 1px solid #f1d7df;
+      border: 1px solid #b2d8d8;
       border-radius: 10px;
       overflow: hidden;
     }
 
     th, td {
-      border: 1px solid #f1d7df;
+      border: 1px solid #b2d8d8;
       padding: 18px;
       text-align: left;
     }
 
     th {
-      background-color: #e7a9bf;
+      background-color: #66b2b2;
       color: white;
       font-weight: 500;
       font-size: 1rem;
@@ -81,12 +90,12 @@
     }
 
     tr:hover td {
-      background-color: #fff5f8;
+      background-color: #f0fcfc;
     }
 
     .day {
       font-weight: 400;
-      color: #b05c7c;
+      color: #66b2b2;
       width: 180px;
     }
 
@@ -97,7 +106,7 @@
       margin-top: 25px;
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid #f1d7df;
+      border: 1px solid #b2d8d8;
       background: white;
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
       display: flex;
@@ -108,22 +117,48 @@
 
     .info-card img {
       width: 320px;
-      height: 180px;
-      min-height: 270px;
+      height: 270px;
       object-fit: cover;
       border-radius: 10px;
       flex-shrink: 0;
     }
 
-
     .info-text a {
-      color: #b05c7c;
+      color: #66b2b2;
       font-weight: bold;
       text-decoration: none;
     }
 
     .info-text a:hover {
       text-decoration: underline;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #b2d8d8;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .highlights h4 {
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
     /* MOBILE */
@@ -153,11 +188,16 @@
 
       .info-card img {
         width: 100%;
-        height: 140px;
+        height: 220px;
       }
+
       .info-text {
         text-align: center;
-    }
+      }
+
+      .gallery img {
+        height: 400px;
+      }
 
     }
 
@@ -222,14 +262,27 @@
 
     <div class="info-card">
 
-      <img src="./Carrie no background 2.png" alt="Carrie Image" />
+      <img src="./media/carrie-no-background.png" alt="Carrie Image" />
 
       <div class="info-text">
-        For further info on Carrie's current location and activities, please contact Paolo on <a href="https://wa.me/447849687464" target="_blank">07849687464</a> 🤌🏻
+        For further info on Carrie's current location and activities, please contact Paolo on 
+        <a href="https://wa.me/447849687464" target="_blank">07849687464</a> 🤌🏻
       </div>
 
     </div>
 
+    <!-- GALLERY -->
+<div class="highlights">
+  <h4>Highlights of the week</h4>
+    <div class="gallery">
+      <img src="./media/carrie-paolo.png" alt="">
+      <img src="./media/immigrant.png" alt="">
+      <img src="./media/paolo-pranda.png" alt="">
+      <img src="./media/wheelie.png" alt="">
+      <img src="./media/carrie-mole.png" alt="">
+      <img src="./media/cupcakes.png" alt="">
+    </div>
+</div>
   </div>
 
 </body>
